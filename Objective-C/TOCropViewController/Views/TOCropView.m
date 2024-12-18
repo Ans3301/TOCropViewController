@@ -23,8 +23,9 @@
 #import "TOCropView.h"
 #import "TOCropOverlayView.h"
 #import "TOCropScrollView.h"
+#import "HeaderView.h"
 
-#define TOCROPVIEW_BACKGROUND_COLOR [UIColor colorWithWhite:0.12f alpha:1.0f]
+#define TOCROPVIEW_BACKGROUND_COLOR [UIColor clearColor]
 
 static const CGFloat kTOCropViewPadding = 14.0f;
 static const NSTimeInterval kTOCropTimerDuration = 0.8f;
@@ -175,6 +176,17 @@ typedef NS_ENUM(NSInteger, TOCropViewOverlayEdge) {
     self.backgroundImageView = [[UIImageView alloc] initWithImage:self.image];
     self.backgroundImageView.layer.minificationFilter = kCAFilterTrilinear;
     
+    HeaderView *headerView = [[HeaderView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 116)];
+    [self addSubview:headerView];
+    
+    headerView.translatesAutoresizingMaskIntoConstraints = NO;
+        [NSLayoutConstraint activateConstraints:@[
+            [headerView.topAnchor constraintEqualToAnchor:self.topAnchor],
+            [headerView.leadingAnchor constraintEqualToAnchor:self.leadingAnchor],
+            [headerView.trailingAnchor constraintEqualToAnchor:self.trailingAnchor],
+            [headerView.heightAnchor constraintEqualToConstant:116]
+    ]];
+    
     //Background container view
     self.backgroundContainerView = [[UIView alloc] initWithFrame:self.backgroundImageView.frame];
     [self.backgroundContainerView addSubview:self.backgroundImageView];
@@ -183,7 +195,7 @@ typedef NS_ENUM(NSInteger, TOCropViewOverlayEdge) {
     //Grey transparent overlay view
     self.overlayView = [[UIView alloc] initWithFrame:self.bounds];
     self.overlayView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    self.overlayView.backgroundColor = [self.backgroundColor colorWithAlphaComponent:0.35f];
+    self.overlayView.backgroundColor = [UIColor clearColor];
     self.overlayView.hidden = NO;
     self.overlayView.userInteractionEnabled = NO;
     [self addSubview:self.overlayView];

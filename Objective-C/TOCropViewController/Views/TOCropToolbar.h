@@ -77,7 +77,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /* Aspect ratio button visibility settings */
 @property (nonatomic, assign) BOOL clampButtonHidden;
-@property (nonatomic, assign) BOOL rotateCounterclockwiseButtonHidden;
+@property (nonatomic, assign) BOOL rotateCounterClockwiseButtonHidden;
 @property (nonatomic, assign) BOOL rotateClockwiseButtonHidden;
 @property (nonatomic, assign) BOOL resetButtonHidden;
 @property (nonatomic, assign) BOOL doneButtonHidden;

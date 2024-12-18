@@ -21,6 +21,7 @@
 //  IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #import "TOCropToolbar.h"
+#import "UIColor+Hex.h"
 
 #define TOCROPTOOLBAR_DEBUG_SHOWING_BUTTONS_CONTAINER_RECT 0   // convenience debug toggle
 
@@ -54,7 +55,7 @@
 
 - (void)setup {
     self.backgroundView = [[UIView alloc] initWithFrame:self.bounds];
-    self.backgroundView.backgroundColor = [UIColor colorWithWhite:0.12f alpha:1.0f];
+    self.backgroundView.backgroundColor = [UIColor clearColor];
     [self addSubview:self.backgroundView];
     
     // On iOS 9, we can use the new layout features to determine whether we're in an 'Arabic' style language mode
@@ -69,21 +70,23 @@
     NSBundle *resourceBundle = TO_CROP_VIEW_RESOURCE_BUNDLE_FOR_OBJECT(self);
     
     _doneTextButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    [_doneTextButton setTitle: _doneTextButtonTitle ?
-        _doneTextButtonTitle : NSLocalizedStringFromTableInBundle(@"Done",
-																  @"TOCropViewControllerLocalizable",
-																  resourceBundle,
-                                                                  nil)
-                     forState:UIControlStateNormal];
-    [_doneTextButton setTitleColor:[UIColor colorWithRed:1.0f green:0.8f blue:0.0f alpha:1.0f] forState:UIControlStateNormal];
-    if (@available(iOS 13.0, *)) {
-        [_doneTextButton.titleLabel setFont:[UIFont systemFontOfSize:17.0f weight:UIFontWeightMedium]];
-    } else {
-        [_doneTextButton.titleLabel setFont:[UIFont systemFontOfSize:17.0f]];
-    }
+    [_doneTextButton setTitle:@"Save" forState:UIControlStateNormal];
+    [_doneTextButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    _doneTextButton.layer.cornerRadius = 3.0;
+    _doneTextButton.backgroundColor = [UIColor colorWithHex:@"#430BE0"];
+    [_doneTextButton setTintColor:[UIColor whiteColor]];
+    [_doneTextButton setImage:[UIImage systemImageNamed:@"checkmark"] forState:UIControlStateNormal];
+    _doneTextButton.imageEdgeInsets = UIEdgeInsetsMake(0, -5, 0, 0);
     [_doneTextButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
-    [_doneTextButton sizeToFit];
+    _doneTextButton.translatesAutoresizingMaskIntoConstraints = NO;
     [self addSubview:_doneTextButton];
+    
+    [NSLayoutConstraint activateConstraints:@[
+        [_doneTextButton.trailingAnchor constraintEqualToAnchor:self.trailingAnchor constant:16],
+        [_doneTextButton.bottomAnchor constraintEqualToAnchor:self.bottomAnchor constant:43],
+        [_doneTextButton.heightAnchor constraintEqualToConstant:32],
+        [_doneTextButton.widthAnchor constraintEqualToConstant:124]
+    ]];
     
     _doneIconButton = [UIButton buttonWithType:UIButtonTypeSystem];
     [_doneIconButton setImage:[TOCropToolbar doneImage] forState:UIControlStateNormal];
@@ -91,21 +94,22 @@
     [_doneIconButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_doneIconButton];
 
-    // Set the default color for the done buttons
-    self.doneButtonColor = nil;
-
     _cancelTextButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    
-    [_cancelTextButton setTitle: _cancelTextButtonTitle ?
-        _cancelTextButtonTitle : NSLocalizedStringFromTableInBundle(@"Cancel",
-																	@"TOCropViewControllerLocalizable",
-																	resourceBundle,
-                                                                    nil)
-                       forState:UIControlStateNormal];
-    [_cancelTextButton.titleLabel setFont:[UIFont systemFontOfSize:17.0f]];
+    [_cancelTextButton setTitle:@"Cancel" forState:UIControlStateNormal];
+    [_cancelTextButton setTitleColor:[UIColor colorWithHex:@"#2D2D2D"] forState:UIControlStateNormal];
+    _cancelTextButton.layer.borderColor = [UIColor colorWithHex:@"#430BE0"].CGColor;
+    _cancelTextButton.layer.borderWidth = 1.0;
+    _cancelTextButton.layer.cornerRadius = 3.0;
     [_cancelTextButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
-    [_cancelTextButton sizeToFit];
+    _cancelTextButton.translatesAutoresizingMaskIntoConstraints = NO;
     [self addSubview:_cancelTextButton];
+    
+    [NSLayoutConstraint activateConstraints:@[
+        [_cancelTextButton.leadingAnchor constraintEqualToAnchor:self.leadingAnchor constant:16],
+        [_cancelTextButton.bottomAnchor constraintEqualToAnchor:self.bottomAnchor constant:43],
+        [_cancelTextButton.heightAnchor constraintEqualToConstant:32],
+        [_cancelTextButton.widthAnchor constraintEqualToConstant:124]
+    ]];
     
     _cancelIconButton = [UIButton buttonWithType:UIButtonTypeSystem];
     [_cancelIconButton setImage:[TOCropToolbar cancelImage] forState:UIControlStateNormal];
@@ -225,7 +229,7 @@
         CGSize buttonSize = (CGSize){44.0f,44.0f};
         
         NSMutableArray *buttonsInOrderHorizontally = [NSMutableArray new];
-        if (!self.rotateCounterclockwiseButtonHidden) {
+        if (!self.rotateCounterClockwiseButtonHidden) {
             [buttonsInOrderHorizontally addObject:self.rotateCounterclockwiseButton];
         }
         
@@ -263,7 +267,7 @@
         CGSize buttonSize = (CGSize){44.0f,44.0f};
         
         NSMutableArray *buttonsInOrderVertically = [NSMutableArray new];
-        if (!self.rotateCounterclockwiseButtonHidden) {
+        if (!self.rotateCounterClockwiseButtonHidden) {
             [buttonsInOrderVertically addObject:self.rotateCounterclockwiseButton];
         }
         
@@ -372,10 +376,10 @@
 
 - (void)setRotateCounterClockwiseButtonHidden:(BOOL)rotateButtonHidden
 {
-    if (_rotateCounterclockwiseButtonHidden == rotateButtonHidden)
+    if (_rotateCounterClockwiseButtonHidden == rotateButtonHidden)
         return;
     
-    _rotateCounterclockwiseButtonHidden = rotateButtonHidden;
+    _rotateCounterClockwiseButtonHidden = rotateButtonHidden;
     [self setNeedsLayout];
 }
 

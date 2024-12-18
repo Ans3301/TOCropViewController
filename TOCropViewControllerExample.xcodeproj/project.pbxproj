@@ -98,6 +98,22 @@
 		2F5062F31F53E31F00AA9F14 /* TOCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D831B234CFA008B8466 /* TOCropViewController.m */; };
 		2F5062F41F53E32800AA9F14 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 223424751ABBC0CD00BBC2B1 /* ViewController.m */; };
 		2F5062F51F53E32D00AA9F14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223424771ABBC0CD00BBC2B1 /* Main.storyboard */; };
+		E21A1EF92D13068E00722CC1 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E21A1EF82D13068E00722CC1 /* OpenSans-Regular.ttf */; };
+		E21A1EFB2D1306A500722CC1 /* Pattaya-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E21A1EFA2D1306A500722CC1 /* Pattaya-Regular.ttf */; };
+		E2C927DB2D0C7D4E00C22E50 /* HeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = E2C927DA2D0C7D4100C22E50 /* HeaderView.h */; };
+		E2C927DC2D0C7D4E00C22E50 /* HeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = E2C927DA2D0C7D4100C22E50 /* HeaderView.h */; };
+		E2C927DE2D0C7D5900C22E50 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C927DD2D0C7D5500C22E50 /* HeaderView.m */; };
+		E2C927DF2D0C7D5900C22E50 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C927DD2D0C7D5500C22E50 /* HeaderView.m */; };
+		E2C927E02D0C7D5900C22E50 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C927DD2D0C7D5500C22E50 /* HeaderView.m */; };
+		E2C927E12D0C7D5900C22E50 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C927DD2D0C7D5500C22E50 /* HeaderView.m */; };
+		E2C927E22D0C7D5900C22E50 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C927DD2D0C7D5500C22E50 /* HeaderView.m */; };
+		E2C927F92D0C80CF00C22E50 /* UIColor+Hex.h in Headers */ = {isa = PBXBuildFile; fileRef = E2C927F82D0C80CA00C22E50 /* UIColor+Hex.h */; };
+		E2C927FA2D0C80CF00C22E50 /* UIColor+Hex.h in Headers */ = {isa = PBXBuildFile; fileRef = E2C927F82D0C80CA00C22E50 /* UIColor+Hex.h */; };
+		E2C927FC2D0C80D500C22E50 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C927FB2D0C80D300C22E50 /* UIColor+Hex.m */; };
+		E2C927FD2D0C80D500C22E50 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C927FB2D0C80D300C22E50 /* UIColor+Hex.m */; };
+		E2C927FE2D0C80D500C22E50 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C927FB2D0C80D300C22E50 /* UIColor+Hex.m */; };
+		E2C927FF2D0C80D500C22E50 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C927FB2D0C80D300C22E50 /* UIColor+Hex.m */; };
+		E2C928002D0C80D500C22E50 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C927FB2D0C80D300C22E50 /* UIColor+Hex.m */; };
 		FE3E0E3A21098448004DAE93 /* TOCropViewConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 220C8E9F21062DD300A9B25D /* TOCropViewConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -221,6 +237,12 @@
 		A93782D3214A81A200CAE7EE /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
 		CDC8C5751C667B9100BB86A4 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
 		CDC8C5771C667B9100BB86A4 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
+		E21A1EF82D13068E00722CC1 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		E21A1EFA2D1306A500722CC1 /* Pattaya-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pattaya-Regular.ttf"; sourceTree = "<group>"; };
+		E2C927DA2D0C7D4100C22E50 /* HeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
+		E2C927DD2D0C7D5500C22E50 /* HeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
+		E2C927F82D0C80CA00C22E50 /* UIColor+Hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		E2C927FB2D0C80D300C22E50 /* UIColor+Hex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		E4C7D121221D7465003F381A /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
 		E4C7D122221D7548003F381A /* fa-IR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fa-IR"; path = "fa-IR.lproj/TOCropViewControllerLocalizable.strings"; sourceTree = "<group>"; };
 		FFD1D3CD24D41CFF00E79B71 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
@@ -385,6 +407,7 @@
 		2234246D1ABBC0CD00BBC2B1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E21A1EF72D13065C00722CC1 /* Fonts */,
 				22F7331C259B71C400956847 /* TOCropViewControllerExample-Extension.entitlements */,
 				22F7331B259B71C400956847 /* TOCropViewControllerExample.entitlements */,
 				2234246E1ABBC0CD00BBC2B1 /* Info.plist */,
@@ -459,6 +482,8 @@
 		22DB4D881B234D07008B8466 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E2C927FB2D0C80D300C22E50 /* UIColor+Hex.m */,
+				E2C927F82D0C80CA00C22E50 /* UIColor+Hex.h */,
 				22DB4D891B234D07008B8466 /* TOCropViewControllerTransitioning.h */,
 				22DB4D8A1B234D07008B8466 /* TOCropViewControllerTransitioning.m */,
 				22DB4D9C1B234D4F008B8466 /* TOActivityCroppedImageProvider.h */,
@@ -472,6 +497,8 @@
 		22DB4D8D1B234D07008B8466 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E2C927DD2D0C7D5500C22E50 /* HeaderView.m */,
+				E2C927DA2D0C7D4100C22E50 /* HeaderView.h */,
 				22DB4D8E1B234D07008B8466 /* TOCropOverlayView.h */,
 				22DB4D8F1B234D07008B8466 /* TOCropOverlayView.m */,
 				22DB4D901B234D07008B8466 /* TOCropScrollView.h */,
@@ -484,6 +511,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		E21A1EF72D13065C00722CC1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E21A1EF82D13068E00722CC1 /* OpenSans-Regular.ttf */,
+				E21A1EFA2D1306A500722CC1 /* Pattaya-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -493,7 +529,9 @@
 			files = (
 				2238CF451FC02AE00081B957 /* TOCropViewController.h in Headers */,
 				144B8CD71D22CD650085D774 /* TOCropToolbar.h in Headers */,
+				E2C927DC2D0C7D4E00C22E50 /* HeaderView.h in Headers */,
 				220C8EB22106344D00A9B25D /* UIImage+CropRotate.h in Headers */,
+				E2C927FA2D0C80CF00C22E50 /* UIColor+Hex.h in Headers */,
 				144B8CD81D22CD650085D774 /* TOCropView.h in Headers */,
 				144B8CD11D22CD650085D774 /* TOCropViewControllerTransitioning.h in Headers */,
 				144B8CD21D22CD650085D774 /* TOActivityCroppedImageProvider.h in Headers */,
@@ -514,9 +552,11 @@
 				04262DA420F6FC4600024177 /* TOCropViewController.h in Headers */,
 				220C8EA82106341600A9B25D /* TOCropViewConstants.h in Headers */,
 				220C8EB12106344D00A9B25D /* UIImage+CropRotate.h in Headers */,
+				E2C927DB2D0C7D4E00C22E50 /* HeaderView.h in Headers */,
 				04262D9C20F6FC4600024177 /* TOCropViewControllerTransitioning.h in Headers */,
 				04262D9D20F6FC4600024177 /* TOActivityCroppedImageProvider.h in Headers */,
 				04262D9E20F6FC4600024177 /* TOCroppedImageAttributes.h in Headers */,
+				E2C927F92D0C80CF00C22E50 /* UIColor+Hex.h in Headers */,
 				04262DA020F6FC4600024177 /* TOCropOverlayView.h in Headers */,
 				04262DA120F6FC4600024177 /* TOCropScrollView.h in Headers */,
 			);
@@ -646,7 +686,7 @@
 					144B8CC81D22CAFF0085D774 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 6LF3GMKZAB;
-						LastSwiftMigration = 0810;
+						LastSwiftMigration = 1620;
 					};
 					220611961B2E6777001A467B = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -656,6 +696,7 @@
 					223424691ABBC0CD00BBC2B1 = {
 						CreatedOnToolsVersion = 6.2;
 						DevelopmentTeam = 6LF3GMKZAB;
+						LastSwiftMigration = 1620;
 					};
 					2238CF1F1FC0269C0081B957 = {
 						CreatedOnToolsVersion = 9.1;
@@ -747,9 +788,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				223424791ABBC0CD00BBC2B1 /* Main.storyboard in Resources */,
+				E21A1EFB2D1306A500722CC1 /* Pattaya-Regular.ttf in Resources */,
 				2234247E1ABBC0CD00BBC2B1 /* LaunchScreen.xib in Resources */,
 				2234247B1ABBC0CD00BBC2B1 /* Images.xcassets in Resources */,
 				22A105B52BC134A200DB3A80 /* PrivacyInfo.xcprivacy in Resources */,
+				E21A1EF92D13068E00722CC1 /* OpenSans-Regular.ttf in Resources */,
 				22C3C5471AC8CA0D00E86280 /* TOCropViewControllerLocalizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -791,12 +834,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				220C8EAD2106344D00A9B25D /* UIImage+CropRotate.m in Sources */,
+				E2C927DE2D0C7D5900C22E50 /* HeaderView.m in Sources */,
 				144B8CDA1D22CD730085D774 /* TOCropViewControllerTransitioning.m in Sources */,
 				144B8CDB1D22CD730085D774 /* TOActivityCroppedImageProvider.m in Sources */,
 				144B8CDC1D22CD730085D774 /* TOCroppedImageAttributes.m in Sources */,
 				144B8CDE1D22CD730085D774 /* TOCropOverlayView.m in Sources */,
 				144B8CDF1D22CD730085D774 /* TOCropScrollView.m in Sources */,
 				144B8CE01D22CD730085D774 /* TOCropToolbar.m in Sources */,
+				E2C927FD2D0C80D500C22E50 /* UIColor+Hex.m in Sources */,
 				144B8CE11D22CD730085D774 /* TOCropView.m in Sources */,
 				144B8CE21D22CD730085D774 /* TOCropViewController.m in Sources */,
 			);
@@ -814,6 +859,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2C927E02D0C7D5900C22E50 /* HeaderView.m in Sources */,
 				22DB4D9B1B234D07008B8466 /* TOCropView.m in Sources */,
 				223424761ABBC0CD00BBC2B1 /* ViewController.m in Sources */,
 				22BF96201B2CD017009F4785 /* TOCroppedImageAttributes.m in Sources */,
@@ -824,6 +870,7 @@
 				22DB4D981B234D07008B8466 /* TOCropOverlayView.m in Sources */,
 				22DB4D9E1B234D4F008B8466 /* TOActivityCroppedImageProvider.m in Sources */,
 				22DB4D961B234D07008B8466 /* TOCropViewControllerTransitioning.m in Sources */,
+				E2C927FC2D0C80D500C22E50 /* UIColor+Hex.m in Sources */,
 				22DB4D991B234D07008B8466 /* TOCropScrollView.m in Sources */,
 				223DCEB61FBAA85D00F99209 /* TOCropViewController.m in Sources */,
 			);
@@ -833,6 +880,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2C927DF2D0C7D5900C22E50 /* HeaderView.m in Sources */,
 				22B68F951FFB380700601B1A /* TOCropViewControllerTransitioning.m in Sources */,
 				22B68F961FFB380700601B1A /* TOActivityCroppedImageProvider.m in Sources */,
 				22B68F971FFB380700601B1A /* TOCroppedImageAttributes.m in Sources */,
@@ -843,6 +891,7 @@
 				22B68F9C1FFB380700601B1A /* TOCropView.m in Sources */,
 				22B68F9D1FFB380700601B1A /* TOCropViewController.m in Sources */,
 				2238CF251FC0269C0081B957 /* ViewController.swift in Sources */,
+				E2C927FF2D0C80D500C22E50 /* UIColor+Hex.m in Sources */,
 				2238CF231FC0269C0081B957 /* AppDelegate.swift in Sources */,
 				2238CF361FC029880081B957 /* CropViewController.swift in Sources */,
 			);
@@ -853,10 +902,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				220C8EAC2106344D00A9B25D /* UIImage+CropRotate.m in Sources */,
+				E2C928002D0C80D500C22E50 /* UIColor+Hex.m in Sources */,
 				22B68F9F1FFB3C0800601B1A /* TOCropViewControllerTransitioning.m in Sources */,
 				22B68FA01FFB3C0800601B1A /* TOActivityCroppedImageProvider.m in Sources */,
 				22B68FA11FFB3C0800601B1A /* TOCroppedImageAttributes.m in Sources */,
 				22B68FA31FFB3C0800601B1A /* TOCropOverlayView.m in Sources */,
+				E2C927E12D0C7D5900C22E50 /* HeaderView.m in Sources */,
 				22B68FA41FFB3C0800601B1A /* TOCropScrollView.m in Sources */,
 				22B68FA51FFB3C0800601B1A /* TOCropToolbar.m in Sources */,
 				22B68FA61FFB3C0800601B1A /* TOCropView.m in Sources */,
@@ -876,10 +927,12 @@
 				2F5062F41F53E32800AA9F14 /* ViewController.m in Sources */,
 				2F5062F31F53E31F00AA9F14 /* TOCropViewController.m in Sources */,
 				2F5062F11F53E31F00AA9F14 /* TOCropToolbar.m in Sources */,
+				E2C927E22D0C7D5900C22E50 /* HeaderView.m in Sources */,
 				2F5062F01F53E31F00AA9F14 /* TOCropScrollView.m in Sources */,
 				2F5062EB1F53E31F00AA9F14 /* TOCropViewControllerTransitioning.m in Sources */,
 				2F5062ED1F53E31F00AA9F14 /* TOCroppedImageAttributes.m in Sources */,
 				220C8EB02106344D00A9B25D /* UIImage+CropRotate.m in Sources */,
+				E2C927FE2D0C80D500C22E50 /* UIColor+Hex.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -993,7 +1046,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Objective-C/TOCropViewController/Supporting/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1008,6 +1061,8 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
 				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1034,7 +1089,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Objective-C/TOCropViewController/Supporting/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1049,6 +1104,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
 				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1067,7 +1123,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Objective-C/TOCropViewControllerTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1090,7 +1146,7 @@
 				DEVELOPMENT_TEAM = 6LF3GMKZAB;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Objective-C/TOCropViewControllerTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1222,6 +1278,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Objective-C/TOCropViewControllerExample/TOCropViewControllerExample.entitlements";
 				DEVELOPMENT_TEAM = 6LF3GMKZAB;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1230,7 +1287,7 @@
 				);
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/Objective-C/TOCropViewControllerExample/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1239,6 +1296,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
 				SUPPORTS_MACCATALYST = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
 			};
 			name = Debug;
@@ -1247,6 +1306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Objective-C/TOCropViewControllerExample/TOCropViewControllerExample.entitlements";
 				DEVELOPMENT_TEAM = 6LF3GMKZAB;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1255,7 +1315,7 @@
 				);
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/Objective-C/TOCropViewControllerExample/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1264,6 +1324,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
 				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
 			};
 			name = Release;
@@ -1283,7 +1344,7 @@
 				DEVELOPMENT_TEAM = 6LF3GMKZAB;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "$(SRCROOT)/Swift/CropViewControllerExample/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1311,7 +1372,7 @@
 				DEVELOPMENT_TEAM = 6LF3GMKZAB;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "$(SRCROOT)/Swift/CropViewControllerExample/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1348,7 +1409,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "$(SRCROOT)/Swift/CropViewController/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1393,7 +1454,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "$(SRCROOT)/Swift/CropViewController/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1432,7 +1493,7 @@
 				);
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/Objective-C/TOCropViewControllerExample-Extension/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1461,7 +1522,7 @@
 				DEVELOPMENT_TEAM = 6LF3GMKZAB;
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/Objective-C/TOCropViewControllerExample-Extension/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

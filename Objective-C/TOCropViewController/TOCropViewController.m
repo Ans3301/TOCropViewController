@@ -26,6 +26,7 @@
 #import "TOActivityCroppedImageProvider.h"
 #import "UIImage+CropRotate.h"
 #import "TOCroppedImageAttributes.h"
+#import "UIColor+Hex.h"
 
 static const CGFloat kTOCropViewControllerTitleTopPadding = 14.0f;
 static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
@@ -113,7 +114,7 @@ static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
 
     // Set up view controller properties
     self.transitioningDelegate = self;
-    self.view.backgroundColor = self.cropView.backgroundColor;
+    self.view.backgroundColor = [UIColor colorWithHex:@"#F6F6F6"];
     
     BOOL circularMode = (self.croppingStyle == TOCropViewCroppingStyleCircular);
 
@@ -1087,6 +1088,7 @@ static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
         _cropView = [[TOCropView alloc] initWithCroppingStyle:self.croppingStyle image:self.image];
         _cropView.delegate = self;
         _cropView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        [_cropView setTranslucencyAlwaysHidden:YES];
         [self.view addSubview:_cropView];
     }
     return _cropView;
@@ -1096,6 +1098,10 @@ static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
 {
     if (!_toolbar) {
         _toolbar = [[TOCropToolbar alloc] initWithFrame:CGRectZero];
+        [_toolbar setClampButtonHidden:YES];
+        [_toolbar setRotateCounterClockwiseButtonHidden:YES];
+        [_toolbar setRotateClockwiseButtonHidden:YES];
+        [_toolbar setResetButtonHidden:YES];
         [self.view addSubview:_toolbar];
     }
     return _toolbar;
@@ -1143,7 +1149,7 @@ static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
 
 - (void)setRotateButtonsHidden:(BOOL)rotateButtonsHidden
 {
-    self.toolbar.rotateCounterclockwiseButtonHidden = rotateButtonsHidden;
+    self.toolbar.rotateCounterClockwiseButtonHidden = rotateButtonsHidden;
     self.toolbar.rotateClockwiseButtonHidden = rotateButtonsHidden;
 }
 
@@ -1154,7 +1160,7 @@ static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
 
 - (BOOL)rotateButtonsHidden
 {
-    return self.toolbar.rotateCounterclockwiseButtonHidden && self.toolbar.rotateClockwiseButtonHidden;
+    return self.toolbar.rotateCounterClockwiseButtonHidden && self.toolbar.rotateClockwiseButtonHidden;
 }
 
 - (void)setRotateClockwiseButtonHidden:(BOOL)rotateClockwiseButtonHidden
