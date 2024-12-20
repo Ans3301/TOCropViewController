@@ -21,7 +21,6 @@
 //  IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #import "TOCropToolbar.h"
-#import "UIColor+Hex.h"
 
 #define TOCROPTOOLBAR_DEBUG_SHOWING_BUTTONS_CONTAINER_RECT 0   // convenience debug toggle
 
@@ -73,7 +72,7 @@
     [_doneTextButton setTitle:@"Save" forState:UIControlStateNormal];
     [_doneTextButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     _doneTextButton.layer.cornerRadius = 3.0;
-    _doneTextButton.backgroundColor = [UIColor colorWithHex:@"#430BE0"];
+    _doneTextButton.backgroundColor = [UIColor colorWithRed:67/255.0 green:11/255.0 blue:224/255.0 alpha:1.0];
     [_doneTextButton setTintColor:[UIColor whiteColor]];
     [_doneTextButton setImage:[UIImage systemImageNamed:@"checkmark"] forState:UIControlStateNormal];
     _doneTextButton.imageEdgeInsets = UIEdgeInsetsMake(0, -5, 0, 0);
@@ -96,8 +95,8 @@
 
     _cancelTextButton = [UIButton buttonWithType:UIButtonTypeSystem];
     [_cancelTextButton setTitle:@"Cancel" forState:UIControlStateNormal];
-    [_cancelTextButton setTitleColor:[UIColor colorWithHex:@"#2D2D2D"] forState:UIControlStateNormal];
-    _cancelTextButton.layer.borderColor = [UIColor colorWithHex:@"#430BE0"].CGColor;
+    [_cancelTextButton setTitleColor:[UIColor colorWithRed:45/255.0 green:45/255.0 blue:45/255.0 alpha:1.0] forState:UIControlStateNormal];
+    _cancelTextButton.layer.borderColor = [UIColor colorWithRed:67/255.0 green:11/255.0 blue:224/255.0 alpha:1.0].CGColor;
     _cancelTextButton.layer.borderWidth = 1.0;
     _cancelTextButton.layer.cornerRadius = 3.0;
     [_cancelTextButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];

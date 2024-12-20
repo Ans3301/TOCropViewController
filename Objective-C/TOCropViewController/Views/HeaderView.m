@@ -7,7 +7,6 @@
 //
 
 #import "HeaderView.h"
-#import "UIColor+Hex.h"
 
 @interface HeaderView ()
 
@@ -21,7 +20,7 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor colorWithHex:@"#FFFFFF"];
+        self.backgroundColor = [UIColor whiteColor];
 
         [self setupTextField];
         [self setupLogoLabel];
@@ -33,16 +32,16 @@
     self.textField = [[UITextField alloc] init];
     self.textField.translatesAutoresizingMaskIntoConstraints = NO;
     self.textField.userInteractionEnabled = NO;
-    self.textField.backgroundColor = [UIColor colorWithHex:@"#F6F6F6"];
+    self.textField.backgroundColor = [UIColor colorWithRed:246/255.0 green:246/255.0 blue:246/255.0 alpha:1.0];
     self.textField.layer.cornerRadius = 4;
     self.textField.layer.borderWidth = 1;
-    self.textField.layer.borderColor = [UIColor colorWithHex:@"#E2E2E2"].CGColor;
+    self.textField.layer.borderColor = [UIColor colorWithRed:226/255.0 green:226/255.0 blue:226/255.0 alpha:1.0].CGColor;
     self.textField.autocapitalizationType = UITextAutocapitalizationTypeNone;
     self.textField.font = [UIFont fontWithName:@"OpenSans-Regular" size:14];
-    self.textField.textColor = [UIColor colorWithHex:@"#2D2D2D"];
+    self.textField.textColor = [UIColor colorWithRed:45/255.0 green:45/255.0 blue:45/255.0 alpha:1.0];
     
     NSAttributedString *placeholder = [[NSAttributedString alloc] initWithString:@"Search images" attributes:@{
-        NSForegroundColorAttributeName: [UIColor colorWithHex:@"#747474"]
+        NSForegroundColorAttributeName: [UIColor colorWithRed:116/255.0 green:116/255.0 blue:116/255.0 alpha:1.0]
     }];
     self.textField.attributedPlaceholder = placeholder;
     
@@ -52,7 +51,7 @@
     [imageContainerView addSubview:imageView];
     self.textField.leftView = imageContainerView;
     self.textField.leftViewMode = UITextFieldViewModeAlways;
-    self.textField.tintColor = [UIColor colorWithHex:@"#575757"];
+    self.textField.tintColor = [UIColor colorWithRed:87/255.0 green:87/255.0 blue:87/255.0 alpha:1.0];
 
     [self addSubview:self.textField];
 
@@ -68,12 +67,12 @@
     self.logoLabel = [[UILabel alloc] init];
     self.logoLabel.translatesAutoresizingMaskIntoConstraints = NO;
     self.logoLabel.text = @"P";
-    self.logoLabel.backgroundColor = [UIColor colorWithHex:@"#430BE0"];
+    self.logoLabel.backgroundColor = [UIColor colorWithRed:67/255.0 green:11/255.0 blue:224/255.0 alpha:1.0];
     self.logoLabel.layer.masksToBounds = YES;
     self.logoLabel.layer.cornerRadius = 5;
     self.logoLabel.textAlignment = NSTextAlignmentCenter;
     self.logoLabel.font = [UIFont fontWithName:@"Pattaya-Regular" size:32];
-    self.logoLabel.textColor = [UIColor colorWithHex:@"#FFFFFF"];
+    self.logoLabel.textColor = [UIColor whiteColor];
 
     [self addSubview:self.logoLabel];
 
